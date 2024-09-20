@@ -1,0 +1,1 @@
+# majinyj.github.io

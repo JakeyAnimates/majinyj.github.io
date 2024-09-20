@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials - MajinYJ</title>
+    <link rel="icon" type="image/x-icon" href="msymbol.ico">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            margin-top: -150px;
+            float: right;
+            font-family: Coolvetica;
+            position: sticky;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .NavBar {
+            background: linear-gradient(270deg,#ce6bc3,#ff9cf4);
+            width: auto;
+            padding-bottom: -75px;
+            padding-top: 20px;
+            font-family: Coolvetica;
+            border-bottom: ridge;
+            border-bottom-width: thick;
+            position: sticky;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .button {
+            width: max-content;
+            border-radius: 1em;
+            background: #f6f6f6;
+            font-size: 25px;
+            font-family: Coolvetica;
+            outline: none;
+            color: #333333;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.25em;
+            cursor: pointer;
+        }
+
+        .button:hover {
+                background: silver;
+                transition: color 0.2s;
+        }
+        ion-icon {
+            font-size: 64px;
+        }
+        body {
+            background-image: url('image3.png');
+        }
+        .blur {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            z-index: -99;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-position-y:-750px;
+        }
+        * {
+            margin-left: 0px;
+            padding-left: 0px;
+            margin-right: 0px;
+            padding-right: 0px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="blur">
+    <header>
+        <center>
+
+            <nav class="NavBar">
+                <div class="NavDiv">
+                    <img src="msymbol.ico" ; width="5%" ; style="padding-top: 20px;"></img>
+                    <ul>
+                        <button class="button" type="button"><a href="index.html">Home Page</a></button>
+                        <button class="button" type="button"><a href="aboutme.html">About Me</a></button>
+                        <button class="button" type="button"><a href="socials.html">Socials</a></button>
+                        <button class="button" type="button"><a href="hobbies.html">Hobbies</a></button>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </center>
+        <aside>
+            <p style="font-family:Coolvetica" ;>Log In:</p>
+            <form>
+                <label for="user" , style="font-family:Coolvetica" ;>Username:</label><br>
+                <input type="text" id="user" name="user"><br>
+                <label for="pass" , style="font-family:Coolvetica" ;>Password:</label><br>
+                <input type="password" id="pass" name="pass">
+            </form>
+        </aside>
+    </header>
+    <header>
+        <center>
+            <div class="socials-title">
+                <h1 style="font-family:Coolvetica"> Socials: </h1>
+                <h3 style="font-family:Coolvetica">(Here's where you can reach me btw)</h3>
+            </div>
+        </center>
+        <br />
+        <br />
+        <br>
+    </header>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2 style="color: white; font-family:Coolvetica">Get in Touch!</h2>
+                <hr />
+            </div>
+            <input type="hidden" name="access_key" value="32d8fa7d-93a6-42fd-aa90-a4fd0a0bbbbc">
+            <input type="text" name="name" placeholder="Your Name:" class="contact-inputs" required />
+            <br />
+            <input type="email" name="email" placeholder="Email:" class="contact-inputs" required />
+            <br />
+            <textarea name="message" placeholder="Your Message" ; class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="arrow-forward-outline.svg" /></button>
+        </form>
+    </div>
+   
+    <br />
+    <br />
+    <footer style="color:white; font-family:Coolvetica">
+        <center>
+            <h6>© 2024 MajinYJ Studios</h6> 
+             <a class="social-icon" href="https://www.tiktok.com/@majinyj_">
+                <ion-icon name="logo-tiktok"></ion-icon>
+             </a>
+             <a class="social-icon" href="https://www.youtube.com/@MajinYJ">
+                <ion-icon name="logo-youtube"></ion-icon>
+             </a>
+             <a class="social-icon" href="https://discord.gg/uSXtZgBhQN">
+                <ion-icon name="logo-discord"></ion-icon>
+             </a>
+            
+        </center>
+    </footer>
+</body>
+</html>
